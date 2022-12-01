@@ -1,0 +1,408 @@
+
+
+
+/* ********************************** Base********************************************* */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**************************************end base section******************************** */
+
+/**************************************Header section******************************** */
+
+header{
+    display: flex;
+    align-items: center;
+}
+
+header figure{
+    width: 27%;
+}
+
+header img{
+    width: 47%;
+}
+
+/**************************************nav section******************************** */
+nav{
+    width: 88%;
+    /* display: inline; */
+}
+
+nav ul{
+    margin: 31px 0 3px 0;
+}
+
+nav li{
+    list-style: none; 
+    display: inline; 
+    margin: 38px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.fa-bars{
+    display: none;
+}
+/**************************************end of nav section******************************** */
+
+/**************************************end of Header section******************************** */
+
+
+
+/**************************************hero section******************************** */
+.hero{
+    display: flex;
+    align-items: center;
+    height: 460px;
+    overflow: hidden;
+}
+
+
+.hero img{
+    position: sticky;
+    width: 100%;
+}
+
+/**************************************div decouvrir******************************** */
+
+.decouvrir{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: rgb(28 86 0 / 50%);;
+    padding: 8px;
+    position: absolute;
+    width: 100%;
+    /* margin-bottom: 3px; */
+    margin-top: 419px;
+}
+
+.decouvrir a{
+    border-radius: 7px;
+    border-color: green;
+    padding: 4px 7px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    position: sticky;
+}
+
+/**************************************end div decouvrir******************************** */
+
+/**************************************end hero section******************************** */
+
+
+
+/**************************************content section******************************** */
+.content{
+    display: flex;
+    justify-content: space-around;
+    margin: 26px 0 0 12px;
+}
+
+
+.description{
+    width: 85%;
+}
+
+.description figure{
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.description img{ 
+    width: 2%;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-right: 3px;
+}
+
+.description p{
+    margin-bottom: 15px;
+}
+
+
+/**************************************aside section******************************** */
+aside{
+    background-color: green;
+    color: white;
+    margin: 2px 0 0 7px;
+    padding: 26px;
+    width: 40%;
+}
+
+aside h3{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+aside img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+aside p{
+    margin: 22px 0;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.socials .fa::before {
+    color: white;
+    font-size: 33px;
+    transition: transform .2s;
+} 
+
+.socials i{
+    margin: 46px 15px 0px 18px;
+
+}
+
+.socials i:hover{
+    transform: scale(1.2);
+}
+
+/**************************************end aside section******************************** */
+/**************************************end content section******************************** */
+
+
+/**************************************main section******************************** */
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    position: relative;
+    left: 50%;
+    border-top: 30px solid green;
+}
+
+main {
+    border-bottom: 3px solid green;
+}
+
+/**************************************end main section******************************** */
+
+
+/**************************************footer section******************************** */
+footer{
+    display: flex;
+    align-items: center;
+    margin: 25px;
+}
+
+form{
+    width: 64%;
+}
+
+form h4{
+    margin-bottom: 10px;
+}
+
+footer li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+form input{
+    padding: 3px;
+    color: grey;
+}
+
+.inscription{
+    display: flex;
+    margin-right: 80px;
+}
+
+.inscription a{
+    color: white;
+    background-color: green;
+    border: green;
+    padding: 6px 15px;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.gallery figure{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.gallery img{
+    width: 23%;
+    margin-top: 10px;
+    transition: transform .2s;
+}
+
+.gallery img:hover{
+    transform: scale(1.2);
+}
+
+.partenaires{
+    margin-left: 81px;
+}
+
+.partenaires figure{
+    display: flex;
+    align-items: center;
+}
+
+.partenaires img{
+    margin-top: 10px;
+    width: 90%;
+    transition: transform .2s;
+}
+
+.partenaires img:hover{
+    transform: scale(1.2);
+}
+
+/**************************************end footer section******************************** */
+
+
+                                /**************************************media query section******************************** */
+
+@media only screen and (min-width:768px) and (max-width:959px)  {
+    header img {
+        width: 66%;
+    }
+
+    nav li {
+        margin: 15px;
+    }
+
+    .description img {
+        width: 4%;
+    }
+
+}
+
+
+@media only screen and (max-width: 767px) {
+ 
+    /**************************************Header section******************************** */
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
+    }
+
+    nav {
+        display: none;
+        overflow: hidden;
+        background-color: white;
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    .fa-bars{
+        background: white;
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: black;
+    }
+
+    nav li{
+        display: block;
+        margin: 10px;
+    }
+
+    .nav a{
+        color: black;
+    }
+
+    /**************************************end Header section******************************** */
+    
+
+    /**************************************hero section******************************** */
+    .hero{
+        height: auto;
+        align-items: flex-end;
+    }
+    
+    .hero figure {
+        height: 224px;
+    }
+
+    .decouvrir a {
+        padding: 8px 7px;
+    }
+
+    /**************************************end hero section******************************** */
+
+
+    /**************************************main section******************************** */
+    main{
+        border-bottom: 0px solid green;
+    }
+
+    .arrow-down{
+        left: 44%;
+    }
+    /**************************************end main section******************************** */
+    
+
+    /**************************************content section******************************** */
+    .content {
+        display: block;
+        margin: 0;
+    }
+
+    .description {
+        width: 100%;
+        padding: 26px 12px 0 12px;
+    }
+    
+    .description img{
+        width: 6%;
+    }
+
+    aside{
+        width: 100%;
+        margin: 0;
+    }
+
+    /**************************************end content section******************************** */
+
+
+    /**************************************footer section******************************** */ 
+    footer{
+        display: block;
+        margin: 0;
+    }
+
+    form{
+        margin: 25px;
+    }
+
+    form h4 {
+        margin-bottom: 11px;
+    }
+
+    .gallery{
+        margin: 25px;
+    }
+    
+    .partenaires {
+        margin: 25px;
+    }
+
+    /**************************************end footer section******************************** */
+}
